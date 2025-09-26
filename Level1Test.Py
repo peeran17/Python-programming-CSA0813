@@ -1,12 +1,26 @@
-#8 
+# Problem 10 :Write a Python Program to Intersecting an elements
+s1={1,2,3,45,5,6,3}
+s2={1,2,3,9,6,5}
+s=s1.intersection(s2)
+print(s)
+
+
+# problem 9 : Write a python program to store the arrays in non-increasing order
+arr=[4,8,3,5,9]
+arr.sort()
+print(arr)
+
+
+#8 Write a python program to find the average of mean median mode
 arr=[24,54,67,98]
 sum=0
+count=len(arr)   
 for i in arr:
     sum+=i
-print(sum//4)    
+print(sum // count)
 
 
-#7. Positive or Negative
+#problem 7 : Check whether the number is positive or negative
 n=int(input("Enter A Number:"))
 
 if n>0:
@@ -14,7 +28,7 @@ if n>0:
 else:
     print("It is A Negative")
 
-#6.duplicate Array
+#problem 6 : Write a program to find out the duplicate array
 arr=[1,2,3,3,4,4,5,6,6,]
 unique_arr=[]
 for i in arr:
@@ -24,18 +38,23 @@ print(unique_arr)
 
 
 
-#5.Leap Year Checkup
+#problem 5 : Check whether Give Year is Leap Year or Not
 year=int(input("Enter The Year:"))
 
 if (year % 4 == 0 and year %100 !=0) or (year % 400 == 0):
     print(f'{year} is A Leap Year..')
 else:
-    print(f'{year} is Not a Leap Year ')    
+    print(f'{year} is Not a Leap Year ')  
 
-#4 Multiplication Table
+
+
+
+#problem 4 : print the Multiplication Table
 n=int(input("ENter The Multiplication N:"))
 for i in range(1,10):
     print(n,'X',i,'=',n*i)
+
+
 
 
 # 3.Suare Pattern
@@ -45,14 +64,16 @@ for i in range(1, 6):
     print()                    
    
   
-# 2 Find The Sqaure And Cube Of Decimal Number
+# problem 2  : Find The Sqaure And Cube Of Decimal Number
 n=float(input("Enter The Float Values Only..."))
 square=n**2
 cube=n**3
 print(square)
 print(cube)
 
-#1 
+# Problem 1 : Read the number until -1 is encounter. find the avg of positive numbers and
+negative numbers entered by user
+
 print("Enter -1 to exit the loop")
 
 pos_sum = 0
@@ -83,3 +104,4 @@ if neg_count > 0:
     print("avg negative number is", neg_avg)
 else:
     print("No negative numbers entered")
+
