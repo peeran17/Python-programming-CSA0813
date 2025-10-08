@@ -113,3 +113,131 @@ elif m>=60:
     print('C')
 else:
     print("FAIL !")    
+
+21. Program to find factorial of a number
+n = int(input("Enter a number: "))
+fact = 1
+for i in range(1, n + 1):
+    fact *= i
+print("Factorial of", n, "is", fact)
+
+22. Program to check whether a number is palindrome
+n = int(input("Enter number: "))
+temp = n
+rev = 0
+while n > 0:
+    d = n % 10
+    rev = rev * 10 + d
+    n //= 10
+if temp == rev:
+    print("Palindrome Number")
+else:
+    print("Not a Palindrome Number")
+
+23. Program to check whether a number is prime or not
+n = int(input("Enter number: "))
+if n <= 1:
+    print("Not Prime")
+else:
+    for i in range(2, n):
+        if n % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime Number")
+
+24. Program to print Fibonacci series
+n = int(input("Enter number of terms: "))
+a, b = 0, 1
+print(a, b, end=" ")
+for i in range(2, n):
+    c = a + b
+    print(c, end=" ")
+    a, b = b, c
+
+25. Program to find the sum of digits of a number
+n = int(input("Enter number: "))
+sum = 0
+while n > 0:
+    d = n % 10
+    sum += d
+    n //= 10
+print("Sum of digits:", sum)
+
+26. Program to check Armstrong number
+n = int(input("Enter number: "))
+temp = n
+sum = 0
+while n > 0:
+    d = n % 10
+    sum += d ** 3
+    n //= 10
+if temp == sum:
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
+
+27. Program to find reverse of a number
+n = int(input("Enter number: "))
+rev = 0
+while n > 0:
+    d = n % 10
+    rev = rev * 10 + d
+    n //= 10
+print("Reverse of number:", rev)
+
+28. Program to find the largest of three numbers
+a, b, c = map(int, input("Enter three numbers: ").split())
+if a > b and a > c:
+    print(a, "is largest")
+elif b > c:
+    print(b, "is largest")
+else:
+    print(c, "is largest")
+
+29. Program to find the smallest of three numbers
+a, b, c = map(int, input("Enter three numbers: ").split())
+if a < b and a < c:
+    print(a, "is smallest")
+elif b < c:
+    print(b, "is smallest")
+else:
+    print(c, "is smallest")
+
+30. Program to check even or odd
+n = int(input("Enter number: "))
+if n % 2 == 0:
+    print("Even Number")
+else:
+    print("Odd Number")
+
+31. Program to find LCM of two numbers
+a, b = map(int, input("Enter two numbers: ").split())
+maxi = max(a, b)
+while True:
+    if maxi % a == 0 and maxi % b == 0:
+        print("LCM is", maxi)
+        break
+    maxi += 1
+
+32. Program to find GCD of two numbers
+a, b = map(int, input("Enter two numbers: ").split())
+while b != 0:
+    a, b = b, a % b
+print("GCD is", a)
+
+33. Program to swap two numbers
+a, b = map(int, input("Enter two numbers: ").split())
+a, b = b, a
+print("After swapping:", a, b)
+
+34. Program to find area of circle
+r = float(input("Enter radius: "))
+area = 3.14159 * r * r
+print("Area of circle:", area)
+
+35. Program to find area of rectangle
+l = float(input("Enter length: "))
+b = float(input("Enter breadth: "))
+area = l * b
+print("Area of rectangle:", area)
